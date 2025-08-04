@@ -1,0 +1,20 @@
+/*create empty tables 
+*/
+
+
+/*Definition Attributes and Types*/
+CREATE TABLE ###.###.customer (
+  id INT,
+  kunden_id VARCHAR(30) PRIMARY KEY NOT NULL,
+  vorname VARCHAR(30) NOT NULL,
+  nachname VARCHAR(30) NOT NULL,
+  strasse VARCHAR(30),
+  ort VARCHAR(30),
+  plz VARCHAR(5), 
+  vorwahl VARCHAR(10),
+  telefon VARCHAR(20),
+  bundesland VARCHAR(30),
+  geburtstag DATE,
+  alter INT,
+  timestamp1 DATE
+)
