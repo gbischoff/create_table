@@ -3,6 +3,8 @@
 
 
 /*Definition Attributes and Types*/
+
+/*customer table*/
 CREATE TABLE ###.###.customer (
   id INT,
   kunden_id VARCHAR(30) PRIMARY KEY NOT NULL,
@@ -17,4 +19,16 @@ CREATE TABLE ###.###.customer (
   geburtstag DATE,
   alter INT,
   timestamp1 DATE
+);
+
+/*credit table*/
+CREATE TABLE ###.###.credit (
+ kunden_id STRING PRIMARY KEY NOT NULL,
+ kredit_score DOUBLE NOT NULL,
+ kreditauslastungsgrad DOUBLE,
+ schulden_zu_einkommen_ratio DOUBLE,
+ avg_monatliche_einzahlung INTEGER,
+ hypotheken_status STRING,
+ kunde_seit DATE, 
+ kunde_seit_jahre INTEGER
 )
